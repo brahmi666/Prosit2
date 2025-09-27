@@ -14,5 +14,6 @@ public class Main {
         m2.ajouter(new Produit(103, "Fromage", "Président", 3.5f, LocalDate.now()));
         m2.afficher();
 
+        System.out.println("produits total dans tous les magasins: " + (m1.getTotalProducts()+m2.getTotalProducts()));
     }
 }

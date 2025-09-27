@@ -33,4 +33,7 @@ public class Magasin {
               System.out.println(p);
          }
    }
+   public int getTotalProducts() {
+       return nbproduit;
+    }
 }
