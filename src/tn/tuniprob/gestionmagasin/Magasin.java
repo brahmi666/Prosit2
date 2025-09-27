@@ -19,7 +19,7 @@ public class Magasin {
 
 
     public void ajouter(Produit produit) {
-       if (nbproduit<50) {
+       if (nbproduit<50 && this.produit.size()<this.capacite) {
            this.produit.add(produit);
            nbproduit++;
        } else {
