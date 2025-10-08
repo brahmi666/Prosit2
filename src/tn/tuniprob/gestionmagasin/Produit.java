@@ -27,4 +27,16 @@ public class Produit {
                 this.libelle +" marque " + this.marque +" prix "
                 + this.prix +" date " + this.date;
     }
+
+    public boolean comparer(Produit prd) {
+        return this.identifiant == prd.identifiant &&
+                this.libelle.equalsIgnoreCase(prd.libelle) &&
+                this.prix == prd.prix;
+    }
+
+    public static boolean comparer(Produit p1, Produit p2) {
+        return p1.identifiant == p2.identifiant &&
+                p1.libelle.equalsIgnoreCase(p2.libelle) &&
+                p1.prix == p2.prix;
+    }
 }
